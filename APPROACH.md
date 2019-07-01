@@ -188,7 +188,7 @@ ruboocop -a
 
 ### Session 8
 
-**Mon  1 Jul 2019 17:55**
+**Mon  1 Jul 2019 17:55 - Mon  1 Jul 2019 18:39**
 
 **To do**
 - Format the transaction readings
@@ -200,3 +200,23 @@ ruboocop -a
 - Started testing a small method used by the formatter, but it was private and a colleague said we don't need to test those.
 - Wrote the small method, checked it manually
 - Having trouble passing the last test, using IRB helped me realise not storing the balance earlier means it is the same on each transaction in the statement.
+
+### Session 9
+
+**Mon 1 Jul 2019 18:50**
+
+**To do**
+- Change transactions to be created with balance
+- Commit
+
+
+**Done**
+- Change transactions to be created with balance
+- Made all amounts be floats with 2 decimal places
+- Updated the CRC card
+- Updated readme with instructions
+
+---
+
+## What I would do differently:
+- Maybe iterating on the diagramming of the domain, to prevent backtracking to change a constructor.

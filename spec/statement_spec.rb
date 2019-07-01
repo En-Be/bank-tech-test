@@ -8,7 +8,7 @@ describe Bank do
     withdrawal = rand(100)
     subject.withdraw(withdrawal)
 
-    expect(subject.balance).to eq("Your balance is #{deposit - withdrawal}")
+    expect(subject.balance).to eq(deposit - withdrawal)
   end
 
   it 'has somewhere to record transactions' do
@@ -17,31 +17,30 @@ describe Bank do
 
   it 'can have a transaction added' do
     subject.deposit(34)
-    time = Time.now.strftime("%x")
+    time = Time.now.strftime('%x')
     expect(subject.transactions[0].date).to eq(time)
-    expect(subject.transactions[0].type).to eq("deposit")
-    expect(subject.transactions[0].amount).to eq(34)
+    expect(subject.transactions[0].type).to eq('deposit')
+    expect(subject.transactions[0].amount).to eq('34.00')
   end
 
   it 'view the statement header' do
-    expect(subject.statement[0]).to eq("date || credit || debit || balance")
+    expect(subject.statement[0]).to eq('date || credit || debit || balance')
   end
 
   it 'formats a transaction for viewing' do
-    amount = 34
+    amount = 34.00
     subject.deposit(amount)
-    time = Time.now.strftime("%x")
-    expect(subject.statement[0]).to eq("date || credit || debit || balance")
-    expect(subject.statement[1]).to eq("#{time} || #{amount} ||  || #{subject.balance}")
+    time = Time.now.strftime('%x')
+    expect(subject.statement[0]).to eq('date || credit || debit || balance')
+    expect(subject.statement[1]).to eq("#{time} || 34.00 ||  || 34.00")
   end
 
   it 'can print the full statement' do
     subject.deposit(10)
-    subject.withdraw(5)
-    time = Time.now.strftime("%x")
-    expect(subject.statement[0]).to eq("date || credit || debit || balance")
-    expect(subject.statement[1]).to eq("#{time} ||  || 5 || Your balance is 5")
-    expect(subject.statement[2]).to eq("#{time} || 10 ||  || Your balance is 10")
-
+    subject.withdraw(7)
+    time = Time.now.strftime('%x')
+    expect(subject.statement[0]).to eq('date || credit || debit || balance')
+    expect(subject.statement[1]).to eq("#{time} ||  || 7.00 || 3.00")
+    expect(subject.statement[2]).to eq("#{time} || 10.00 ||  || 10.00")
   end
 end

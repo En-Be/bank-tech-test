@@ -1,9 +1,12 @@
-class Transaction
-  attr_reader :date, :type, :amount
+# frozen_string_literal: true
 
-  def initialize(date, type, amount)
+class Transaction
+  attr_reader :date, :type, :amount, :balance
+
+  def initialize(date, type, amount, balance)
     @date = date
     @type = type
-    @amount = amount
+    @amount = format('%.2f', amount.to_f)
+    @balance = format('%.2f', balance.to_f)
   end
 end
