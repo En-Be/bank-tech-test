@@ -66,7 +66,7 @@ ruboocop -a
 
 ### Session 3
 
-**Mon 1 Jul 2019 14:14**
+**Mon 1 Jul 2019 14:14 - Mon 1 Jul 2019 14:52**
 
 **To do**
 - Model user story two and three
@@ -83,10 +83,70 @@ ruboocop -a
   - Created deposit method
   - Tested in terminal:
 
-  ```
-  $ irb -r ./Bank.rb
-  2.6.0 :001 > Bank.deposit(1)
-   => "You deposited 1"
-  ```
+    ```
+    $ irb -r ./Bank.rb
+    2.6.0 :001 > Bank.deposit(1)
+     => "You deposited 1"
+    ```
+
 - Updated models to reflect method change
+- Commit
+
+### Session 4
+
+**Mon 1 Jul 2019 14:57 - Mon 1 Jul 2019 15:43**
+
+**To do**
+- Setup simplecov console format
+- Test story two
+
+**Done**
+- Added simplecov console format:
+  - Added simplecov console gem in gemfile, ran bundle
+  - Added formatter to spec_helper
+- Test for withdraw method
+  - Created deposit method
+  - Tested in terminal:
+
+    ```
+    $ irb -r './Bank.rb'
+    2.6.0 :001 > Bank.withdraw(5000)
+     => "You withdrew 5000"
+    ```
+- Test for withdrawal limit
+  - Realised it wasn't in the spec so deleted it
+
+### Session 5
+
+**Mon  1 Jul 2019 15:45**
+
+**To do**
+- Test story three
+
+**Done**
+- Started writing a test to see the statement
+  - Flailed with multiline string format
+  - Realised test is too big
+- Test just for balance
+  - Wrote a test and passed it
+  - The test needs to calculate the actual balance, not just return a string that passes the test
+  - So, included a random deposit and withdrawal amount
+  - Made a balance constant in the Bank class
+  - Changed the Bank file to instance itself on loading
+    - Changed the constant to an instance variable
+    - Changed the methods from class to instance
+    - Created a new instance of Bank with @ on the last line, called @bank
+  - The earlier test was now redundant, so deleted it
+- Tested in IRB:
+
+  ```
+  irb -r ./Bank.rb
+  #<Bank:0x00007f9c9113b598 @balance=0>
+  2.6.0 :001 > @bank.deposit(10)
+  => "You deposited 10"
+  2.6.0 :002 > @bank.withdraw(5)
+  => "You withdrew 5"
+  2.6.0 :003 > @bank.balance
+  => "Your balance is 5"
+  ```
 - Commit
