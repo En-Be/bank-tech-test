@@ -11,7 +11,26 @@ describe Bank do
     expect(subject.balance).to eq("Your balance is #{deposit - withdrawal}")
   end
 
-  it 'can print the statement' do
+  it 'has somewhere to record transactions' do
+    expect(subject.statement).to eq([])
+  end
+
+  it 'can have a transaction added' do
+    subject.deposit(34)
+    time = Time.now.strftime("%x")
+    expect(subject.transactions[0].date).to eq(time)
+    expect(subject.transactions[0].type).to eq("deposit")
+    expect(subject.transactions[0].amount).to eq(34)
+  end
+
+  it 'formats a transaction for viewing' do
+    subject.deposit(34)
+    time = Time.now.strftime("%x")
+    # expect(subject.statement).to eq("date || credit || debit || balance"")
+
+  end
+
+  it 'can print the full statement' do
     subject.deposit(10)
     subject.withdraw(5)
     # expect(Bank.statement.to eq()

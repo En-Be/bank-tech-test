@@ -118,7 +118,7 @@ ruboocop -a
 
 ### Session 5
 
-**Mon  1 Jul 2019 15:45**
+**Mon 1 Jul 2019 15:45 - Mon 1 Jul 2019 16:16**
 
 **To do**
 - Test story three
@@ -136,7 +136,7 @@ ruboocop -a
     - Changed the constant to an instance variable
     - Changed the methods from class to instance
     - Created a new instance of Bank with @ on the last line, called @bank
-  - The earlier test was now redundant, so deleted it
+  - The earlier test became redundant, so deleted it
 - Tested in IRB:
 
   ```
@@ -150,3 +150,37 @@ ruboocop -a
   => "Your balance is 5"
   ```
 - Commit
+
+### Session 6
+
+**Mon  1 Jul 2019 16:31 - Mon  1 Jul 2019 17:02**
+
+**To do**
+- Diagram the domain
+  - Record transactions
+  - Get a list of transactions
+
+**Done**
+- CRC cards
+
+  ![crc](./images/crc.png)
+- Test for Transaction class
+- Made a Transaction file and moved it into a lib folder with the Bank file
+- Tested that Transactions have to be initialized with three arguments
+
+### Session 7
+
+**Mon  1 Jul 2019 17:19 - Mon  1 Jul 2019 17:53**
+
+**To do**
+- Test bank for list of transactions
+- Test adding a transaction to list
+- Test transaction read format
+- Commit
+
+
+**Done**
+- Test bank for list of transactions
+- Test transaction for storing arguments
+  - Use particular time formatting
+  - Tested the first entry in the array
