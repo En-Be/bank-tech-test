@@ -184,3 +184,19 @@ ruboocop -a
 - Test transaction for storing arguments
   - Use particular time formatting
   - Tested the first entry in the array
+- Commit
+
+### Session 8
+
+**Mon  1 Jul 2019 17:55**
+
+**To do**
+- Format the transaction readings
+- Commit
+
+**Done**
+- Wrote a test for first line of statement
+- Passed by adding it to transactions array
+- Started testing a small method used by the formatter, but it was private and a colleague said we don't need to test those.
+- Wrote the small method, checked it manually
+- Having trouble passing the last test, using IRB helped me realise not storing the balance earlier means it is the same on each transaction in the statement.
