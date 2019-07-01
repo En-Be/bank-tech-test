@@ -1,3 +1,5 @@
+require './Bank.rb'
+
 require 'simplecov'
 SimpleCov.start
 
