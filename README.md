@@ -27,16 +27,16 @@
   => "You withdrew 550"
 
   > @bank.balance
- => 1450
+  => 1450
   ```
   You can enter any amounts you like.
 
 - You can also see your transaction history, with the most recent at the top:
   ```
   > @bank.statement
-"date || credit || debit || balance"
-"07/01/19 ||  || 550.00 || 1450.00"
-"07/01/19 || 2000.00 ||  || 2000.00"
+  "date || credit || debit || balance"
+  "07/01/19 ||  || 550.00 || 1450.00"
+  "07/01/19 || 2000.00 ||  || 2000.00"
   ```
 
 ### To run tests
