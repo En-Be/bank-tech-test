@@ -6,10 +6,10 @@ describe Transaction do
   end
 
   it 'can have information read' do
-    transaction = Transaction.new('1/1/1', 'deposit', 1, 12)
-    expect(transaction.date).to eq('1/1/1')
+    transaction = Transaction.new('deposit', 1, 12)
+    expect(transaction.date).to eq(Time.now.strftime('%x'))
     expect(transaction.type).to eq('deposit')
-    expect(transaction.amount).to eq('1.00')
-    expect(transaction.balance).to eq('12.00')
+    expect(transaction.amount).to eq(1)
+    expect(transaction.balance).to eq(12)
   end
 end

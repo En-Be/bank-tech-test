@@ -115,4 +115,28 @@ I would like to see a table of deposits, withdrawals, and balance.
 
 ---
 
-**Please see the APPROACH.md file for documentation of the development process :)**
+## Structure
+
+**Upon running the program, a bank is created that can record transactions. These transactions (deposit, withdraw) are added to a list when you make them, and that list can be viewed as a statement to see your balance and history.**
+
+![crc](./images/crc.png)
+
+**The structure has two classes and a module.**
+
+The main class is the __bank__.
+
+Each new bank starts with a balance of 0 and an empty array of transactions. When using the bank's withdraw or deposit methods it updates it's balance, then instances a new transaction with the type and amount and balance, and passes that instance into the transactions array. When using it's statement method it passes away the transaction list to be formatted, and prints what is returned.
+
+The __transaction__ class just holds data.
+
+Some of it passed in on instantiation by the bank object, some written by the instance at creation.
+
+The __statement formatter__ is a module.
+
+I didn't need to create an object for this, it just groups methods by concern into a separate file away from the bank. It is passed the transaction list from bank and reads each entry, using their variables to create strings in an array that are passed back to the bank for printing.
+
+![flow](./images/flow.png)
+
+---
+
+**Please see the APPROACH.md file for documentation of the development process**

@@ -162,8 +162,6 @@ ruboocop -a
 
 **Done**
 - CRC cards
-
-  ![crc](./images/crc.png)
 - Test for Transaction class
 - Made a Transaction file and moved it into a lib folder with the Bank file
 - Tested that Transactions have to be initialized with three arguments
@@ -203,7 +201,7 @@ ruboocop -a
 
 ### Session 9
 
-**Mon 1 Jul 2019 18:50**
+**Mon 1 Jul 2019 18:50 - Mon 1 Jul 2019 19:30**
 
 **To do**
 - Change transactions to be created with balance
@@ -220,3 +218,48 @@ ruboocop -a
 
 ## What I would do differently:
 - Maybe iterating on the diagramming of the domain, to prevent backtracking to change a constructor.
+
+---
+
+### Session 10
+
+**Tue  2 Jul 2019 11:23 - Tue 2 Jul 2019 11:51**
+
+**To do**
+- Pass linter
+- Commit
+
+**Done**
+- Added scaffolint config in a .rubocop.yml to stop linter raising rspec offenses
+- Moved statement formatting into it's own method
+- Spoke to coach to confirm importance of linter passing 100%, not essential if current solution is simple and effective and adheres to OOP.
+
+### Session 11
+
+**Tue 2 Jul 2019 12:14 - Tue 2 Jul 2019 13:20**
+
+**To do**
+- Continue working through self assessment
+  - Include description of structure in readme
+  - Include screenshot/giph of working app
+- Commit
+
+**Done**
+- Started updating readme with description of structure but realised I need to change the structure
+- Moved adding of date to transaction from bank
+- Made a statement formatter module
+- Moved formatting methods to module
+- Refactored formatting methods
+
+### Session 12
+
+**Tue 2 Jul 2019 14:17**
+
+**To do**
+- Finish structure writeup in readme
+- Commit
+
+
+**Done**
+- Finish structure writeup in readme
+- Commit
