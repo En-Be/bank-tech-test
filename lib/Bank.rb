@@ -32,7 +32,7 @@ class Bank
     statement << 'date || credit || debit || balance'
     statement.reverse!
     statement.each do |t|
-      p t
+      puts t
     end
   end
 
