@@ -2,7 +2,8 @@
 
 describe Bank do
   it 'can withdraw an amount' do
-    expect(subject.withdraw(100)).to eq('You withdrew 100')
+    subject.withdraw(100)
+    expect(subject.transactions[0]).to be_instance_of(Transaction)
   end
 
   # it 'cannot withdraw more than balance' do

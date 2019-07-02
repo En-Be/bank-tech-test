@@ -225,6 +225,10 @@ ruboocop -a
 
 **Tue  2 Jul 2019 11:23 - Tue 2 Jul 2019 11:51**
 
+After making a solution yesterday I filled in the self assessment questionnaire to see where I can improve it:
+
+![s-a-A](https://media.giphy.com/media/lOIyhJkQar7fL7MZy3/giphy.gif)
+
 **To do**
 - Pass linter
 - Commit
@@ -259,14 +263,13 @@ ruboocop -a
 - Finish structure writeup in readme
 - Commit
 
-
 **Done**
 - Finish structure writeup in readme
 - Commit
 
 ### Session 13
 
-**Tue 2 Jul 2019 14:48**
+**Tue 2 Jul 2019 14:48 - Tue Jul 2 15:22**
 
 **To do**
 - Make and add gif of demo to readme
@@ -276,3 +279,23 @@ ruboocop -a
 - New self assessment
 
 **Done**
+- Make and add gif of demo to readme
+- Add self assessment to approach
+- Commit
+
+### Session 14
+
+**Tue Jul 2 15:24 - Tue Jul 2 15:46**
+
+![s-a-B](https://media.giphy.com/media/eN43o5rozPy1VZOQuU/giphy.gif)
+
+**To do**
+- Use symbols for immutable data
+- New self assessment
+
+**Done**
+- Fixed tests I broke removing extra returns
+- Changed transaction types to be symbols in classes and tests
+- New self assessment at 'additional' level
+- Tried researching testing behaviour vs testing state
+- Commit

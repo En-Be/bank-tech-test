@@ -1,6 +1,6 @@
 # BANK TECH TEST
 
-![demo](https://gph.is/g/4bvlmg9)
+![demo](https://media.giphy.com/media/LMVJaWFQfTbVkggz2k/giphy.gif)
 
 ## How to use
 

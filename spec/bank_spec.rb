@@ -17,7 +17,7 @@ describe Bank do
     subject.deposit(34)
     time = Time.now.strftime('%x')
     expect(subject.transactions[0].date).to eq(time)
-    expect(subject.transactions[0].type).to eq('deposit')
+    expect(subject.transactions[0].type).to eq(:deposit)
     expect(subject.transactions[0].amount).to eq(34)
   end
 end

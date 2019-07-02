@@ -11,9 +11,9 @@ def format_transaction(transaction)
   amount = format_to_two_decimals(transaction.amount)
   balance = format_to_two_decimals(transaction.balance)
 
-  deposit = credit_or_debit(amount, transaction, 'deposit')
-  withdrawal = credit_or_debit(amount, transaction, 'withdraw')
-  
+  deposit = credit_or_debit(amount, transaction, :deposit)
+  withdrawal = credit_or_debit(amount, transaction, :withdraw)
+
   "#{transaction.date} || #{deposit} || #{withdrawal} || #{balance}"
 end
 

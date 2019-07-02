@@ -13,12 +13,12 @@ class Bank
 
   def deposit(amount)
     @balance += amount
-    @transactions << Transaction.new('deposit', amount, balance)
+    @transactions << Transaction.new(:deposit, amount, balance)
   end
 
   def withdraw(amount)
     @balance -= amount
-    @transactions << Transaction.new('withdraw', amount, balance)
+    @transactions << Transaction.new(:withdraw, amount, balance)
   end
 
   def statement
