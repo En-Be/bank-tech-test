@@ -241,7 +241,7 @@ ruboocop -a
 **To do**
 - Continue working through self assessment
   - Include description of structure in readme
-  - Include screenshot/giph of working app
+  - Include screenshot/gif of working app
 - Commit
 
 **Done**
@@ -253,7 +253,7 @@ ruboocop -a
 
 ### Session 12
 
-**Tue 2 Jul 2019 14:17**
+**Tue 2 Jul 2019 14:17 - Tue  2 Jul 2019 14:46**
 
 **To do**
 - Finish structure writeup in readme
@@ -263,3 +263,16 @@ ruboocop -a
 **Done**
 - Finish structure writeup in readme
 - Commit
+
+### Session 13
+
+**Tue 2 Jul 2019 14:48**
+
+**To do**
+- Make and add gif of demo to readme
+- Use symbols for immutable data
+- Add self assessment to approach
+- Commit
+- New self assessment
+
+**Done**

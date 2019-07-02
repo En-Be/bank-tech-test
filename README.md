@@ -1,5 +1,7 @@
 # BANK TECH TEST
 
+![demo](https://gph.is/g/4bvlmg9)
+
 ## How to use
 
 - In terminal, clone this repository:
