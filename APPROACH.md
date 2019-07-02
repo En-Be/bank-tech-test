@@ -299,3 +299,20 @@ After making a solution yesterday I filled in the self assessment questionnaire 
 - New self assessment at 'additional' level
 - Tried researching testing behaviour vs testing state
 - Commit
+
+### Session 15
+
+**Tue Jul 2 16:09 - Tue Jul  2 16:38**
+
+![s-a-C](https://media.giphy.com/media/TdKXl4fU9cR1P0qFOE/giphy.gif)
+
+**To do**
+- Call puts only once
+- Strict self assessment
+- Commit
+
+**Done**
+- Refactored to separate logic and output/not loop puts
+- Fixed tests broken by refactor, now they check behaviour
+- Passed rubopcop 100%
+- Commit

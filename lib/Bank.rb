@@ -22,10 +22,7 @@ class Bank
   end
 
   def statement
-    statement = format_statement(@transactions)
-    statement.each do |t|
-      puts t
-    end
+    puts format_statement(@transactions)
   end
 
 end

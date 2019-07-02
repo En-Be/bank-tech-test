@@ -1,10 +1,10 @@
 def format_statement(transactions)
-  statement = []
+  statement = 'date || credit || debit || balance'
+  transactions.reverse!
   transactions.each do |t|
-    statement << format_transaction(t)
+    statement += "\n" + format_transaction(t)
   end
-  statement << 'date || credit || debit || balance'
-  statement.reverse!
+  statement
 end
 
 def format_transaction(transaction)

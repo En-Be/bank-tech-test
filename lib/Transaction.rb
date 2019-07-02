@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Transaction
-  attr_reader :date, :type, :amount, :balance
+  attr_reader :type, :amount, :balance
 
   def initialize(type, amount, balance)
     @date = date
